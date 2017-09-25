@@ -70,3 +70,13 @@ if (!function_exists( 'woobizz_show_footer_plugin_title' ) ) {
 	}
 	add_action ('in_admin_header','woobizz_show_footer_plugin_title');
 }
+//REMOVE DEFAULT STOREFRONT FOOTER CREDIT
+if (!function_exists( 'woobizz_remove_storefront_footer_credit' ) ) {
+	
+	function woobizz_remove_storefront_footer_credit(){
+		remove_action( 'storefront_footer', 'storefront_credit', 20 );
+	}
+	add_action( 'widgets_init', 'woobizz_remove_storefront_footer_credit', 11 );
+}
+
+	

@@ -24,9 +24,9 @@ function woobizz_afterfooter_sidebar_css(){
 // START 1.1 AFTER FOOTER BACKGROUND
 //--------------------------------------------------------------------------------------
 //Background
-$woobizz_afterfooter_backgroundimage= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_backgroundimage');
-$woobizz_afterfooter_backgroundcolor= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_backgroundcolor');
-$woobizz_afterfooter_backgroundsize= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_backgroundsize');
+$woobizz_afterfooter_backgroundimage= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_backgroundimage');
+$woobizz_afterfooter_backgroundcolor= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_backgroundcolor');
+$woobizz_afterfooter_backgroundsize= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_backgroundsize');
 if ($woobizz_afterfooter_backgroundsize==0){
 		$woobizz_afterfooter_backgroundsize="contain";
 	} elseif($woobizz_afterfooter_backgroundsize==1) {
@@ -38,7 +38,7 @@ if ($woobizz_afterfooter_backgroundsize==0){
 	} else {
 		$woobizz_afterfooter_backgroundsize="initial";
 } 
-$woobizz_afterfooter_backgroundrepeat= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_backgroundrepeat');
+$woobizz_afterfooter_backgroundrepeat= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_backgroundrepeat');
 if ($woobizz_afterfooter_backgroundrepeat==0){
 		$woobizz_afterfooter_backgroundrepeat="no-repeat";
 	} elseif($woobizz_afterfooter_backgroundrepeat==1) {
@@ -58,7 +58,7 @@ if ($woobizz_afterfooter_backgroundrepeat==0){
 	} else {
 		$woobizz_afterfooter_backgroundrepeat="initial";
 } 
-$woobizz_afterfooter_backgroundposition= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_backgroundposition');
+$woobizz_afterfooter_backgroundposition= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_backgroundposition');
 if ($woobizz_afterfooter_backgroundposition==0){
 		$woobizz_afterfooter_backgroundposition="left top";
 	} elseif($woobizz_afterfooter_backgroundposition==1) {
@@ -85,12 +85,12 @@ if ($woobizz_afterfooter_backgroundposition==0){
 		$woobizz_afterfooter_backgroundposition="initial";
 } 
 //Gradients
-$woobizz_afterfooter_backgroundgradient1= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_backgroundgradient1');
-$woobizz_afterfooter_backgroundgradient1opacity= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_backgroundgradient1opacity');
+$woobizz_afterfooter_backgroundgradient1= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_backgroundgradient1');
+$woobizz_afterfooter_backgroundgradient1opacity= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_backgroundgradient1opacity');
 $trasnform_woobizz_afterfooter_backgroundgradient1=woobizz_afterfooter_hextorgb($woobizz_afterfooter_backgroundgradient1);
 $woobizz_afterfooter_backgroundfullgradient1=$trasnform_woobizz_afterfooter_backgroundgradient1.",".$woobizz_afterfooter_backgroundgradient1opacity;
-$woobizz_afterfooter_backgroundgradient2= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_backgroundgradient2');
-$woobizz_afterfooter_backgroundgradient2opacity= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_backgroundgradient2opacity');
+$woobizz_afterfooter_backgroundgradient2= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_backgroundgradient2');
+$woobizz_afterfooter_backgroundgradient2opacity= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_backgroundgradient2opacity');
 $trasnform_woobizz_afterfooter_backgroundgradient2=woobizz_afterfooter_hextorgb($woobizz_afterfooter_backgroundgradient2);
 $woobizz_afterfooter_backgroundfullgradient2=$trasnform_woobizz_afterfooter_backgroundgradient2.",".$woobizz_afterfooter_backgroundgradient2opacity;
 //--------------------------------------------------------------------------------------
@@ -100,8 +100,8 @@ $woobizz_afterfooter_backgroundfullgradient2=$trasnform_woobizz_afterfooter_back
 // START 1.2 AFTER FOOTER MARGINS
 //--------------------------------------------------------------------------------------
 //Margin Top
-$woobizz_afterfooter_margintopsize= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_margintopsize');
-$woobizz_afterfooter_marginunittop= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_marginunittop');
+$woobizz_afterfooter_margintopsize= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_margintopsize');
+$woobizz_afterfooter_marginunittop= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_marginunittop');
 if ($woobizz_afterfooter_marginunittop==0){
 	$woobizz_afterfooter_marginunittop="px";
 } elseif($woobizz_afterfooter_marginunittop==1) {
@@ -114,8 +114,8 @@ if ($woobizz_afterfooter_marginunittop==0){
 	$woobizz_afterfooter_marginunittop="initial";
 } 
 //Margin Right
-$woobizz_afterfooter_marginrightsize= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_marginrightsize');
-$woobizz_afterfooter_marginunitright= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_marginunitright');
+$woobizz_afterfooter_marginrightsize= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_marginrightsize');
+$woobizz_afterfooter_marginunitright= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_marginunitright');
 if ($woobizz_afterfooter_marginunitright==0){
 	$woobizz_afterfooter_marginunitright="px";
 } elseif($woobizz_afterfooter_marginunitright==1) {
@@ -128,8 +128,8 @@ if ($woobizz_afterfooter_marginunitright==0){
 	$woobizz_afterfooter_marginunitright="initial";
 }	
 //Margin Bottom
-$woobizz_afterfooter_marginbottomsize= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_marginbottomsize');
-$woobizz_afterfooter_marginunitbottom= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_marginunitbottom');
+$woobizz_afterfooter_marginbottomsize= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_marginbottomsize');
+$woobizz_afterfooter_marginunitbottom= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_marginunitbottom');
 if ($woobizz_afterfooter_marginunitbottom==0){
 	$woobizz_afterfooter_marginunitbottom="px";
 } elseif($woobizz_afterfooter_marginunitbottom==1) {
@@ -142,8 +142,8 @@ if ($woobizz_afterfooter_marginunitbottom==0){
 	$woobizz_afterfooter_marginunitbottom="initial";
 }	
 //Margin Left
-$woobizz_afterfooter_marginleftsize= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_marginleftsize');
-$woobizz_afterfooter_marginunitleft= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_marginunitleft');
+$woobizz_afterfooter_marginleftsize= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_marginleftsize');
+$woobizz_afterfooter_marginunitleft= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_marginunitleft');
 if ($woobizz_afterfooter_marginunitleft==0){
 	$woobizz_afterfooter_marginunitleft="px";
 } elseif($woobizz_afterfooter_marginunitleft==1) {
@@ -167,8 +167,8 @@ $woobizz_afterfooter_marginfull =  $woobizz_afterfooter_margintopsize.$woobizz_a
 // START 1.3 AFTER FOOTER PADDINGS
 //--------------------------------------------------------------------------------------
 //Padding Top
-$woobizz_afterfooter_paddingtopsize= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_paddingtopsize');
-$woobizz_afterfooter_paddingunittop= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_paddingunittop');
+$woobizz_afterfooter_paddingtopsize= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_paddingtopsize');
+$woobizz_afterfooter_paddingunittop= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_paddingunittop');
 if ($woobizz_afterfooter_paddingunittop==0){
 	$woobizz_afterfooter_paddingunittop="px";
 } elseif($woobizz_afterfooter_paddingunittop==1) {
@@ -181,8 +181,8 @@ if ($woobizz_afterfooter_paddingunittop==0){
 	$woobizz_afterfooter_paddingunittop="initial";
 } 
 //Padding Right
-$woobizz_afterfooter_paddingrightsize= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_paddingrightsize');
-$woobizz_afterfooter_paddingunitright= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_paddingunitright');
+$woobizz_afterfooter_paddingrightsize= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_paddingrightsize');
+$woobizz_afterfooter_paddingunitright= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_paddingunitright');
 if ($woobizz_afterfooter_paddingunitright==0){
 	$woobizz_afterfooter_paddingunitright="px";
 } elseif($woobizz_afterfooter_paddingunitright==1) {
@@ -195,8 +195,8 @@ if ($woobizz_afterfooter_paddingunitright==0){
 	$woobizz_afterfooter_paddingunitright="initial";
 }	
 //Padding Bottom
-$woobizz_afterfooter_paddingbottomsize= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_paddingbottomsize');
-$woobizz_afterfooter_paddingunitbottom= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_paddingunitbottom');
+$woobizz_afterfooter_paddingbottomsize= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_paddingbottomsize');
+$woobizz_afterfooter_paddingunitbottom= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_paddingunitbottom');
 if ($woobizz_afterfooter_paddingunitbottom==0){
 	$woobizz_afterfooter_paddingunitbottom="px";
 } elseif($woobizz_afterfooter_paddingunitbottom==1) {
@@ -209,8 +209,8 @@ if ($woobizz_afterfooter_paddingunitbottom==0){
 	$woobizz_afterfooter_paddingunitbottom="initial";
 }	
 //Padding Left
-$woobizz_afterfooter_paddingleftsize= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_paddingleftsize');
-$woobizz_afterfooter_paddingunitleft= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_paddingunitleft');
+$woobizz_afterfooter_paddingleftsize= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_paddingleftsize');
+$woobizz_afterfooter_paddingunitleft= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_paddingunitleft');
 if ($woobizz_afterfooter_paddingunitleft==0){
 	$woobizz_afterfooter_paddingunitleft="px";
 } elseif($woobizz_afterfooter_paddingunitleft==1) {
@@ -234,9 +234,9 @@ $woobizz_afterfooter_paddingfull =  $woobizz_afterfooter_paddingtopsize.$woobizz
 // START 1.4 AFTER FOOTER BORDERS
 //--------------------------------------------------------------------------------------
 //Border Top
-$woobizz_afterfooter_bordertopsize= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_bordertopsize');
-$woobizz_afterfooter_bordertopcolor= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_bordertopcolor');
-$woobizz_afterfooter_bordertopstyle= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_bordertopstyle');
+$woobizz_afterfooter_bordertopsize= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_bordertopsize');
+$woobizz_afterfooter_bordertopcolor= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_bordertopcolor');
+$woobizz_afterfooter_bordertopstyle= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_bordertopstyle');
 if ($woobizz_afterfooter_bordertopstyle==0){
 		$woobizz_afterfooter_bordertopstyle="dotted";
 	} elseif($woobizz_afterfooter_bordertopstyle==1) {
@@ -251,9 +251,9 @@ $woobizz_afterfooter_bordertopfull=$woobizz_afterfooter_bordertopsize."px "
 									.$woobizz_afterfooter_bordertopstyle." "
 									.$woobizz_afterfooter_bordertopcolor." ";
 //Border Right
-$woobizz_afterfooter_borderrightsize= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_borderrightsize');
-$woobizz_afterfooter_borderrightcolor= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_borderrightcolor');
-$woobizz_afterfooter_borderrightstyle= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_borderrightstyle');
+$woobizz_afterfooter_borderrightsize= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_borderrightsize');
+$woobizz_afterfooter_borderrightcolor= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_borderrightcolor');
+$woobizz_afterfooter_borderrightstyle= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_borderrightstyle');
 if ($woobizz_afterfooter_borderrightstyle==0){
 		$woobizz_afterfooter_borderrightstyle="dotted";
 	} elseif($woobizz_afterfooter_borderrightstyle==1) {
@@ -268,9 +268,9 @@ $woobizz_afterfooter_borderrightfull=$woobizz_afterfooter_borderrightsize."px "
 									.$woobizz_afterfooter_borderrightstyle." "
 									.$woobizz_afterfooter_borderrightcolor." ";
 //Border Bottom
-$woobizz_afterfooter_borderbottomsize= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_borderbottomsize');
-$woobizz_afterfooter_borderbottomcolor= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_borderbottomcolor');
-$woobizz_afterfooter_borderbottomstyle= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_borderbottomstyle');
+$woobizz_afterfooter_borderbottomsize= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_borderbottomsize');
+$woobizz_afterfooter_borderbottomcolor= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_borderbottomcolor');
+$woobizz_afterfooter_borderbottomstyle= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_borderbottomstyle');
 if ($woobizz_afterfooter_borderbottomstyle==0){
 		$woobizz_afterfooter_borderbottomstyle="dotted";
 	} elseif($woobizz_afterfooter_borderbottomstyle==1) {
@@ -285,9 +285,9 @@ $woobizz_afterfooter_borderbottomfull=$woobizz_afterfooter_borderbottomsize."px 
 									.$woobizz_afterfooter_borderbottomstyle." "
 									.$woobizz_afterfooter_borderbottomcolor." ";	
 //Border Left
-$woobizz_afterfooter_borderleftsize= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_borderleftsize');
-$woobizz_afterfooter_borderleftcolor= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_borderleftcolor');
-$woobizz_afterfooter_borderleftstyle= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_borderleftstyle');
+$woobizz_afterfooter_borderleftsize= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_borderleftsize');
+$woobizz_afterfooter_borderleftcolor= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_borderleftcolor');
+$woobizz_afterfooter_borderleftstyle= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_borderleftstyle');
 if ($woobizz_afterfooter_borderleftstyle==0){
 		$woobizz_afterfooter_borderleftstyle="dotted";
 	} elseif($woobizz_afterfooter_borderleftstyle==1) {
@@ -307,11 +307,11 @@ $woobizz_afterfooter_borderleftfull=$woobizz_afterfooter_borderleftsize."px "
 //--------------------------------------------------------------------------------------
 // END 1.5 AFTER FOOTER SHADOWS
 //--------------------------------------------------------------------------------------
-$woobizz_afterfooter_shadowcolor= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_shadowcolor');
-$woobizz_afterfooter_shadowrightdistance= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_shadowrightdistance');
-$woobizz_afterfooter_shadowbottomdistance= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_shadowbottomdistance');
-$woobizz_afterfooter_shadowspread= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_shadowspread');
-$woobizz_afterfooter_shadowsize= get_option(WOOBIZZSIDEBARS.'_woobizz_afterfooter_shadowsize');
+$woobizz_afterfooter_shadowcolor= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_shadowcolor');
+$woobizz_afterfooter_shadowrightdistance= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_shadowrightdistance');
+$woobizz_afterfooter_shadowbottomdistance= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_shadowbottomdistance');
+$woobizz_afterfooter_shadowspread= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_shadowspread');
+$woobizz_afterfooter_shadowsize= get_option(WOOBIZZFOOTER.'_woobizz_afterfooter_shadowsize');
 $woobizz_afterfooter_shadowfull=$woobizz_afterfooter_shadowrightdistance."px "
 						  .$woobizz_afterfooter_shadowbottomdistance."px "
 						  .$woobizz_afterfooter_shadowspread."px "
