@@ -330,18 +330,27 @@ if (is_active_sidebar( 'woobizzafterfooterwidget' ) ) {
 			background-size:".$woobizz_afterfooter_backgroundsize."!important;
 			background-repeat:".$woobizz_afterfooter_backgroundrepeat."!important;
 			background-position:".$woobizz_afterfooter_backgroundposition."!important;
-			margin:".$woobizz_afterfooter_marginfull.";
-			padding:".$woobizz_afterfooter_paddingfull.";
-			box-shadow:".$woobizz_afterfooter_shadowfull.";
-			border-top:".$woobizz_afterfooter_bordertopfull.";
-			border-right:".$woobizz_afterfooter_borderrightfull.";
-			border-bottom:".$woobizz_afterfooter_borderbottomfull.";
-			border-left:".$woobizz_afterfooter_borderleftfull.";
+			margin:".$woobizz_afterfooter_marginfull."!important;
+			padding:".$woobizz_afterfooter_paddingfull."!important;
+			box-shadow:".$woobizz_afterfooter_shadowfull."!important;
+			border-top:".$woobizz_afterfooter_bordertopfull."!important;
+			border-right:".$woobizz_afterfooter_borderrightfull."!important;
+			border-bottom:".$woobizz_afterfooter_borderbottomfull."!important;
+			border-left:".$woobizz_afterfooter_borderleftfull."!important;
 	}
 	.wb-afterfooter-sidebar-content{
 		display:table;
 		width:100%;
 	}
+	.wb-afterfooter-sidebar-content h3.widget-title {
+	border: none;
+	background: none;
+	text-align: left;
+	margin-left: 35px;
+	font-weight: 400;
+	margin-bottom: 15px;
+	font-size: 19px;
+}
 </style>";
 }else{
 	echo "

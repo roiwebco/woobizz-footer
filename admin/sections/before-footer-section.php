@@ -329,18 +329,28 @@ echo "
 			background-size:".$woobizz_beforefooter_backgroundsize."!important;
 			background-repeat:".$woobizz_beforefooter_backgroundrepeat."!important;
 			background-position:".$woobizz_beforefooter_backgroundposition."!important;
-			margin:".$woobizz_beforefooter_marginfull.";
-			padding:".$woobizz_beforefooter_paddingfull.";
-			box-shadow:".$woobizz_beforefooter_shadowfull.";
-			border-top:".$woobizz_beforefooter_bordertopfull.";
-			border-right:".$woobizz_beforefooter_borderrightfull.";
-			border-bottom:".$woobizz_beforefooter_borderbottomfull.";
-			border-left:".$woobizz_beforefooter_borderleftfull.";
+			margin:".$woobizz_beforefooter_marginfull."!important;
+			padding:".$woobizz_beforefooter_paddingfull."!important;
+			box-shadow:".$woobizz_beforefooter_shadowfull."!important;
+			border-top:".$woobizz_beforefooter_bordertopfull."!important;
+			border-right:".$woobizz_beforefooter_borderrightfull."!important;
+			border-bottom:".$woobizz_beforefooter_borderbottomfull."!important;
+			border-left:".$woobizz_beforefooter_borderleftfull."!important;
 	}
 	.wb-beforefooter-sidebar-content{
-		display:table;
-		width:100%;
+		display:table!important;
+		width:100%!important;
 	}
+	.wb-beforefooter-sidebar-content h3.widget-title {
+	border: none;
+	background: none;
+	text-align: left;
+	margin-left: 35px;
+	font-weight: 400;
+	margin-bottom: 15px;
+	font-size: 19px;
+}
+	
 </style>";
 }
 add_action('wp_head', 'woobizz_beforefooter_sidebar_css', 100);

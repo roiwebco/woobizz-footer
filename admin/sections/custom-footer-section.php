@@ -332,15 +332,24 @@ if (is_active_sidebar( 'woobizzcustomfooterwidget' ) ) {
 			background-position:".$woobizz_customfooter_backgroundposition."!important;
 			margin:".$woobizz_customfooter_marginfull."!important;
 			padding:".$woobizz_customfooter_paddingfull."!important;
-			box-shadow:".$woobizz_customfooter_shadowfull.";
-			border-top:".$woobizz_customfooter_bordertopfull.";
-			border-right:".$woobizz_customfooter_borderrightfull.";
-			border-bottom:".$woobizz_customfooter_borderbottomfull.";
-			border-left:".$woobizz_customfooter_borderleftfull.";
+			box-shadow:".$woobizz_customfooter_shadowfull."!important;
+			border-top:".$woobizz_customfooter_bordertopfull."!important;
+			border-right:".$woobizz_customfooter_borderrightfull."!important;
+			border-bottom:".$woobizz_customfooter_borderbottomfull."!important;
+			border-left:".$woobizz_customfooter_borderleftfull."!important;
 }
 .wb-customfooter-sidebar-content{
 	display:table;
 	width:100%;
+}
+.wb-customfooter-sidebar-content h3.widget-title {
+	border: none;
+	background: none;
+	text-align: left;
+	margin-left: 35px;
+	font-weight: 400;
+	margin-bottom: 15px;
+	font-size: 19px;
 }
 	
 </style>";

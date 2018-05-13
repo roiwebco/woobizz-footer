@@ -2,10 +2,10 @@
 /**
 * Plugin Name: Woobizz Footer 
 * Plugin URI: https://woobizz.com
-* Description: Woocommerce Footer Customiser
-* Author: Woobizz
-* Author URI: https://woobizz.com
-* Version: 1.0.0
+* Description: WooCommerce Storefront Footer Customiser
+* Author: ROIWEB.CO
+* Author URI: https://roiweb.co
+* Version: 1.0.1
 * Text Domain: woobizz-footer
 * Domain Path: /lang/
 */
