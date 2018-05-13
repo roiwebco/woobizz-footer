@@ -324,7 +324,7 @@ echo "
 .wb-beforefooter-sidebar-div{
 			background:linear-gradient(rgba(".$woobizz_beforefooter_backgroundfullgradient1."),
 									   rgba(".$woobizz_beforefooter_backgroundfullgradient2.")),
-									   url(".$woobizz_beforefooter_backgroundimage.")!important;
+									   url(".$woobizz_beforefooter_backgroundimage.");
 			background-color:".$woobizz_beforefooter_backgroundcolor."!important;
 			background-size:".$woobizz_beforefooter_backgroundsize."!important;
 			background-repeat:".$woobizz_beforefooter_backgroundrepeat."!important;

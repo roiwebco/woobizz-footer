@@ -325,7 +325,7 @@ if (is_active_sidebar( 'woobizzafterfooterwidget' ) ) {
 .wb-afterfooter-sidebar-div{
 			background:linear-gradient(rgba(".$woobizz_afterfooter_backgroundfullgradient1."),
 									   rgba(".$woobizz_afterfooter_backgroundfullgradient2.")),
-									   url(".$woobizz_afterfooter_backgroundimage.")!important;
+									   url(".$woobizz_afterfooter_backgroundimage.");
 			background-color:".$woobizz_afterfooter_backgroundcolor."!important;
 			background-size:".$woobizz_afterfooter_backgroundsize."!important;
 			background-repeat:".$woobizz_afterfooter_backgroundrepeat."!important;
