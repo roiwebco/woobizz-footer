@@ -350,6 +350,9 @@ echo "
 	margin-bottom: 15px;
 	font-size: 19px;
 }
+.wb-beforefooter-sidebar-div .textwidget {
+    padding: 10px 15px;;
+}
 	
 </style>";
 }
