@@ -351,7 +351,7 @@ echo "
 	font-size: 19px;
 }
 .wb-beforefooter-sidebar-div .textwidget {
-    padding: 10px 15px;;
+    padding: 10px 15px!important;
 }
 	
 </style>";
