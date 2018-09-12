@@ -1,20 +1,4 @@
 <?php
-//RENAME SIDEBAR ON WIDGET PAGE ONLY
-if (!function_exists( 'woobizz_rename_sidebar_plugin' ) ) {
-	function woobizz_rename_sidebar_plugin( $translated ) {
-		if (strpos($_SERVER['REQUEST_URI'], "widgets.php") !== false){
-			add_filter(  'gettext',  'woobizz_rename_sidebar_plugin'  );
-			add_filter(  'ngettext',  'woobizz_rename_sidebar_plugin'  );
-			$words = array('Sidebar' => 'Woobizz Sidebar',);
-			$words = array('Barra lateral' => 'Woobizz Sidebar',);
-			$translated = str_ireplace(  array_keys($words),  $words,  $translated );
-			return $translated; 
-		}else{
-		 //do nothing
-		}
-	}
-	woobizz_rename_sidebar_plugin( $translated );
-}
 //ADD WOOBIZZ MAIN MENU
 if (!function_exists( 'woobizz_main_menu' ) ) {
 		//echo "function no existe";
@@ -48,22 +32,11 @@ if (!function_exists( 'woobizz_welcome_page' ) ) {
 			
 	}
 }
-//HIDE ALL WP NOTICES ON WOOBIZZ PAGE
-if (!function_exists( 'woobizz_hide_woobizz_notices' ) ) {
-	function woobizz_hide_woobizz_notices() {
-		if (strpos($_SERVER['REQUEST_URI'], "page=woobizz") !== false){
-			echo"<style>.notice{display:none;}</style>";
-		}else{
-		 //do nothing
-		}
-	}
-	add_action ('in_admin_header','woobizz_hide_woobizz_notices');
-}
 //ADD PLUGIN TITLE 
 if (!function_exists( 'woobizz_show_footer_plugin_title' ) ) {
 	function woobizz_show_footer_plugin_title() {
 		if (strpos($_SERVER['REQUEST_URI'], "page=woobizz-footer") !== false){
-			echo"<style>#tab-list:before{content:'WooBizz Footer'!important;text-transform: uppercase;margin:18px 18px 18px 18px;display:inherit;</style>";
+			echo"<style>#tab-list:before{content:'WooBizz Footer'!important;text-transform: uppercase;margin:18px 18px 18px 18px;display:inherit;font-size:12px;</style>";
 		}else{
 		 //do nothing
 		}
@@ -78,5 +51,3 @@ if (!function_exists( 'woobizz_remove_storefront_footer_credit' ) ) {
 	}
 	add_action( 'widgets_init', 'woobizz_remove_storefront_footer_credit', 11 );
 }
-
-	

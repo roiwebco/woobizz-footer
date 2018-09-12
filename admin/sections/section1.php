@@ -319,41 +319,60 @@ $woobizz_beforefooter_shadowfull=$woobizz_beforefooter_shadowrightdistance."px "
 						  .$woobizz_beforefooter_shadowcolor;
 //END CART WIDGET COLOR----------------------------------------------------------------------------------------------
 //START SHOWING CSS OPTIONS------------------------------------------------------------------------------------------
-echo "
+if (is_active_sidebar( 'woobizzbeforefooterwidget' ) ) {
+	echo "
 <style>
-.wb-beforefooter-sidebar-div{
-			background:linear-gradient(rgba(".$woobizz_beforefooter_backgroundfullgradient1."),
-									   rgba(".$woobizz_beforefooter_backgroundfullgradient2.")),
-									   url(".$woobizz_beforefooter_backgroundimage.");
-			background-color:".$woobizz_beforefooter_backgroundcolor."!important;
-			background-size:".$woobizz_beforefooter_backgroundsize."!important;
-			background-repeat:".$woobizz_beforefooter_backgroundrepeat."!important;
-			background-position:".$woobizz_beforefooter_backgroundposition."!important;
-			margin:".$woobizz_beforefooter_marginfull."!important;
-			padding:".$woobizz_beforefooter_paddingfull."!important;
-			box-shadow:".$woobizz_beforefooter_shadowfull."!important;
-			border-top:".$woobizz_beforefooter_bordertopfull."!important;
-			border-right:".$woobizz_beforefooter_borderrightfull."!important;
-			border-bottom:".$woobizz_beforefooter_borderbottomfull."!important;
-			border-left:".$woobizz_beforefooter_borderleftfull."!important;
+	.wb-beforefooter-sidebar-div{
+				background:linear-gradient(rgba(".$woobizz_beforefooter_backgroundfullgradient1."),
+										rgba(".$woobizz_beforefooter_backgroundfullgradient2.")),
+										url(".$woobizz_beforefooter_backgroundimage.");
+				background-color:".$woobizz_beforefooter_backgroundcolor."!important;
+				background-size:".$woobizz_beforefooter_backgroundsize."!important;
+				background-repeat:".$woobizz_beforefooter_backgroundrepeat."!important;
+				background-position:".$woobizz_beforefooter_backgroundposition."!important;
+				margin:".$woobizz_beforefooter_marginfull."!important;
+				padding:".$woobizz_beforefooter_paddingfull."!important;
+				box-shadow:".$woobizz_beforefooter_shadowfull."!important;
+				border-top:".$woobizz_beforefooter_bordertopfull."!important;
+				border-right:".$woobizz_beforefooter_borderrightfull."!important;
+				border-bottom:".$woobizz_beforefooter_borderbottomfull."!important;
+				border-left:".$woobizz_beforefooter_borderleftfull."!important;
+				list-style: none!important;
 	}
 	.wb-beforefooter-sidebar-content{
 		display:table!important;
 		width:100%!important;
 	}
 	.wb-beforefooter-sidebar-content h3.widget-title {
-	border: none;
-	background: none;
-	text-align: left;
-	margin-left: 35px;
-	font-weight: 400;
-	margin-bottom: 15px;
-	font-size: 19px;
-}
-.wb-beforefooter-sidebar-div .textwidget {
-    padding: 10px 15px!important;
-}
+		border: none;
+		background: none;
+		text-align: left;
+		margin-left: 35px;
+		font-weight: 400;
+		margin-bottom: 15px;
+		font-size: 19px;
+	}
+	.wb-beforefooter-sidebar-div .textwidget {
+		padding: 10px 15px!important;
+	}
+	.wb-beforefooter-sidebar-div .panel-grid-cell {
+		margin: 0!important;
+	}
+	.wb-beforefooter-sidebar-div .widget{
+		margin-bottom:0!important;
+	}	
+	.site-footer {
+		display: none!important;
+	}
 	
 </style>";
+}else{
+	echo "
+<style>
+	.wb-beforefooter-sidebar-div{
+			display:none!important;
+	}
+</style>";
+}
 }
 add_action('wp_head', 'woobizz_beforefooter_sidebar_css', 100);

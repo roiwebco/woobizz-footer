@@ -337,10 +337,11 @@ if (is_active_sidebar( 'woobizzcustomfooterwidget' ) ) {
 			border-right:".$woobizz_customfooter_borderrightfull."!important;
 			border-bottom:".$woobizz_customfooter_borderbottomfull."!important;
 			border-left:".$woobizz_customfooter_borderleftfull."!important;
+			list-style: none!important;
 }
 .wb-customfooter-sidebar-content{
-	display:table;
-	width:100%;
+	display:table!important;
+	width:100%!important;
 }
 .wb-customfooter-sidebar-content h3.widget-title {
 	border: none;
@@ -350,6 +351,18 @@ if (is_active_sidebar( 'woobizzcustomfooterwidget' ) ) {
 	font-weight: 400;
 	margin-bottom: 15px;
 	font-size: 19px;
+}
+.wb-customfooter-sidebar-div .textwidget {
+    padding: 10px 15px!important;
+}
+.wb-customfooter-sidebar-div .panel-grid-cell {
+   	  margin: 0!important;
+	}
+.wb-customfooter-sidebar-div .widget{
+		margin-bottom:0!important;
+	}		
+.site-footer {
+    display: none!important;
 }
 	
 </style>";

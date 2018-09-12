@@ -322,35 +322,49 @@ $woobizz_afterfooter_shadowfull=$woobizz_afterfooter_shadowrightdistance."px "
 if (is_active_sidebar( 'woobizzafterfooterwidget' ) ) {
 	echo "
 <style>
-.wb-afterfooter-sidebar-div{
-			background:linear-gradient(rgba(".$woobizz_afterfooter_backgroundfullgradient1."),
-									   rgba(".$woobizz_afterfooter_backgroundfullgradient2.")),
-									   url(".$woobizz_afterfooter_backgroundimage.");
-			background-color:".$woobizz_afterfooter_backgroundcolor."!important;
-			background-size:".$woobizz_afterfooter_backgroundsize."!important;
-			background-repeat:".$woobizz_afterfooter_backgroundrepeat."!important;
-			background-position:".$woobizz_afterfooter_backgroundposition."!important;
-			margin:".$woobizz_afterfooter_marginfull."!important;
-			padding:".$woobizz_afterfooter_paddingfull."!important;
-			box-shadow:".$woobizz_afterfooter_shadowfull."!important;
-			border-top:".$woobizz_afterfooter_bordertopfull."!important;
-			border-right:".$woobizz_afterfooter_borderrightfull."!important;
-			border-bottom:".$woobizz_afterfooter_borderbottomfull."!important;
-			border-left:".$woobizz_afterfooter_borderleftfull."!important;
+	.wb-afterfooter-sidebar-div{
+				background:linear-gradient(rgba(".$woobizz_afterfooter_backgroundfullgradient1."),
+										rgba(".$woobizz_afterfooter_backgroundfullgradient2.")),
+										url(".$woobizz_afterfooter_backgroundimage.");
+				background-color:".$woobizz_afterfooter_backgroundcolor."!important;
+				background-size:".$woobizz_afterfooter_backgroundsize."!important;
+				background-repeat:".$woobizz_afterfooter_backgroundrepeat."!important;
+				background-position:".$woobizz_afterfooter_backgroundposition."!important;
+				margin:".$woobizz_afterfooter_marginfull."!important;
+				padding:".$woobizz_afterfooter_paddingfull."!important;
+				box-shadow:".$woobizz_afterfooter_shadowfull."!important;
+				border-top:".$woobizz_afterfooter_bordertopfull."!important;
+				border-right:".$woobizz_afterfooter_borderrightfull."!important;
+				border-bottom:".$woobizz_afterfooter_borderbottomfull."!important;
+				border-left:".$woobizz_afterfooter_borderleftfull."!important;
+				list-style: none!important;
 	}
 	.wb-afterfooter-sidebar-content{
-		display:table;
-		width:100%;
+		display:table!important;
+		width:100%!important;
 	}
 	.wb-afterfooter-sidebar-content h3.widget-title {
-	border: none;
-	background: none;
-	text-align: left;
-	margin-left: 35px;
-	font-weight: 400;
-	margin-bottom: 15px;
-	font-size: 19px;
-}
+		border: none;
+		background: none;
+		text-align: left;
+		margin-left: 35px;
+		font-weight: 400;
+		margin-bottom: 15px;
+		font-size: 19px;
+	}
+	.wb-afterfooter-sidebar-div .textwidget {
+		padding: 10px 15px!important;
+	}
+	.wb-afterfooter-sidebar-div .panel-grid-cell {
+		margin: 0!important;
+		}
+	.wb-afterfooter-sidebar-div .widget{
+		margin-bottom:0!important;
+	}		
+	.site-footer {
+		display: none!important;
+	}
+	
 </style>";
 }else{
 	echo "

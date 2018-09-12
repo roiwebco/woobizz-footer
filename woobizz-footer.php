@@ -3,9 +3,9 @@
 * Plugin Name: Woobizz Footer 
 * Plugin URI: https://woobizz.com
 * Description: WooCommerce Storefront Footer Customiser
-* Author: ROIWEB.CO
-* Author URI: https://roiweb.co
-* Version: 1.0.1
+* Author: WOOBIZZ
+* Author URI: https://woobizz.com
+* Version: 1.0.3
 * Text Domain: woobizz-footer
 * Domain Path: /lang/
 */
@@ -32,6 +32,10 @@ foreach ( glob( plugin_dir_path( __FILE__ ) . "/admin/sidebars/*.php" ) as $file
 }
 //Include all functions php files
 foreach ( glob( plugin_dir_path( __FILE__ ) . "/admin/functions/*.php" ) as $file ) {
+    include_once $file;
+}
+//Include all functions php files
+foreach ( glob( plugin_dir_path( __FILE__ ) . "/admin/options/*.php" ) as $file ) {
     include_once $file;
 }
 // ADD OPTIONS AND SUBMENU
